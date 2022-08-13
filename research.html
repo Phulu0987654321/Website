@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta tags-->
+        <meta name="description"  content="This is front page">
+        <meta name="keywords" content="course wrok">
+        <meta name="aurthor" content="Shishir Phuldel">
+        <title>Phonefyy</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <!--Intwrnal css -->
+    <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .image{
+        margin-left: 350px;
+        
+    }
+    .img{
+        width: 600px;
+        height: 500px;
+        padding: 2px;
+        border: solid black;
+        margin: 5px;
+        
+    }   
+    p{
+        margin-top: 20px;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+    .bttn{
+        margin-left: 650px;
+        font-size: 15px;
+        padding: 5px;
+        border-style: none;
+        background: #4b4b4b;
+        color: white;
+    }
+    .bttn:hover {
+        color: black;
+        background-color: #6dd6fc;
+        transition: 0.2s ease;
+    }
+    .hide{
+        display: none; /* hides the image */        
+    }
+    </style>   
+    </head>
+    <body style="  background: rgb(252, 238, 230);">
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h2><ins>Amazon -  contact-us page</ins></h2>
+                <div class="image">                                   
+                         <img class = "img hide" id = "image1" src="images/amazoncontactus.jpg">
+                        <img  class = "img hide" id = "image2" src="images/contact.png">
+                </div>
+            <button  class = "bttn" onclick="toggle_image()">Change</button>        
+            <p>
+                I have used reference from Amazon Ecommerce website for contact us page.
+                Amazon Contact us page is less colourful and basic where as i have made contact page a bit more colourful and added some Texts to Enhance the look of the page.
+            </p><br><br>
+            <h2><ins>CashZone -  Home page</ins></h2>
+            <div class="image">      
+                <!--img tag is used to insert images-->                             
+                <img class = "img hide" id = "image3" src="images/home.png">
+                <img class = "img hide" id = "image4" src="images/home1.png">
+                <img class = "img hide" id = "image5" src="images/home2.png">
+            </div>
+            <button  class = "bttn" onclick="toggle_images()">Change</button>
+            <p>
+                There is a home page of the a Phone selling website called (CashZone).
+                I have taken reference from this website to make my website homepage.The main idea of taking reference from this website is that it looks clean in comparison to other websites. I have tried to do the same in my home page.
+                CashZone footer section includes information about phones and more but i have provided the social media handels of the website.
+            </p><br><br>
+            <h2><ins>Cash2phone -  validation prompt</ins></h2>
+            <div class="image">                                   
+                <img  class = "img hide" id = "image6" src="images/validation.png">
+               <img class = "img hide" id = "image7" src="images/myvalidation.png">
+            </div> 
+            <button  class = "bttn" onclick="toggle_img()">Change</button>       
+            <p>
+                I have used the contact page of the Cash2phone website to compare validation prompt with my website. Cash2phone has made an unique alert message using css and Javascript. when the given fields are empty the alert message pops just below the empty field but in my website the message pops in the top of the webpage. 
+            </p><br><br>
+             <h2><ins>Sabko Phone- Product Page</ins></h2>
+            <div class="image">                                   
+                <img  class = "img hide" id = "image8" src="images/productpage.png">
+               <img class = "img hide" id = "image9" src="images/sabko.png">
+            </div> 
+            <button  class = "bttn" onclick="toggle_imag()">Change</button>       
+            <p>
+                I have used the Product page of the Mobile selling website to compare  with my Product page.My Product page is pretty much ispired form the Product page of Sabko-phone website. Sabko phone product page includes
+                Quick View funcation when we hover mouse over the products in Page we can see a (Quick-View) Option which allows the user to see the phone pictures in more detail i have not included it. Because our website only sells new phone where as sabko phone sells new as well as old refurbished phones. 
+            </p><br><br>
+            </div>           
+           
+            <script>
+                /*function is used to toggle images*/
+                   
+                function toggle_image(){
+                    var p1 = document.getElementById('image1');
+                    var p2 = document.getElementById('image2');
+
+                    if(p1.style.display == 'none'){
+                        p1.style.display = 'block';
+                        p2.style.display = 'none';
+                    }   
+                    else{
+                        p1.style.display = 'none';
+                        p2.style.display = 'block';
+                    }
+                }
+                /* keeps one of the image visible which has been hidden by css*/
+                document.getElementById('image1').style.display = 'block';
+        
+                function toggle_img(){
+                    var p6 = document.getElementById('image6');
+                    var p7 = document.getElementById('image7');
+
+                    if(p6.style.display == 'none'){
+                        p6.style.display = 'block';
+                        p7.style.display = 'none';
+                    }
+                    else{
+                        p6.style.display = 'none';
+                        p7.style.display = 'block';
+                    }
+                }
+                document.getElementById('image6') .style.display = 'block' ;
+                
+                /*Array is used to iterate images and function is used to toggle the images */
+                var image  = document.getElementById('image3');
+                var imageArray = ["images/home.png", "images/home1.png", "images/home2.png"];
+                var imageIndex = 1;
+
+                function toggle_images(){   
+                    image.setAttribute("src", imageArray[imageIndex]);
+                    imageIndex++;
+                    if(imageIndex > 2) {imageIndex = 0;}
+                }
+                document.getElementById('image3').style.display = 'block';
+
+                function toggle_imag(){
+                    var p1 = document.getElementById('image8');
+                    var p2 = document.getElementById('image9');
+
+                    if(p1.style.display == 'none'){
+                        p1.style.display = 'block';
+                        p2.style.display = 'none';
+                    }   
+                    else{
+                        p1.style.display = 'none';
+                        p2.style.display = 'block';
+                    }
+                }
+                
+                document.getElementById('image9').style.display = 'block';
+            </script>
+    </body>
+</html>

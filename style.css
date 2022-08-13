@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding and border are included in width and height*/
+}
+/* changing the font for whole body of all the pages*/
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  display: flex; /* flex box is used to create and position of the elements inside navbar as table*/
+  align-items: center;
+  padding: 20px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block; /* inline block to place items in horizontal line*/
+  list-style-type: none; /*no marker is given while listing the items*/
+  margin-top: 20px;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px;
+}
+a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #555;
+}
+
+/*a:hover to give some animation to the links while hoverig mouse over then */
+a:hover {
+  color: black;
+  transition: 0.5s ease;
+}
+p {
+  color: #555;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Specifies the flexible item will wrap if necessary*/
+  justify-content: space-around;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+  transition: 0.5s ease;
+}
+/* image pops up at z-index when mouse is hovered*/
+.col-2 img:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.btn {
+  display: inline-block;
+  background:rgb(158, 165, 181);
+  color:black;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+.btn:hover {
+  background:ghostwhite;
+}
+.header {
+  background: rgb(252, 238, 230);
+}
+.header .row {
+  margin-top: 70px;
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* alings elements in flex box as column */
+  padding: 50px;
+  text-align: center;
+}
+.name h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+.info {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+.info h5 {
+  text-align: right;
+  justify-content: right;
+  position: absolute;
+  margin-left: 10em;
+
+}
+footer {
+  display: flex;
+  align-items: center;
+  padding: 40px; /*adds padding of 40px insdide the border and outside the content*/
+  background: rgb(252, 238, 230);
+}
+.logo ul {
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 15em;
+  margin-top: 10px;
+  position: relative;
+}
+.logo ul li {
+  display: inline-block;
+  padding: 50px;
+}
+.logo a {
+  display: inline-block;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
+.logo a:hover {
+  color:rgb(232, 181, 158); /* changes color of the links when hovered*/
+  transition: 0.2s ease;
+}
+.intro {
+  margin-left: 50px;
+}
+.content {
+  width: 50%;
+  margin: 50px; /* adds margin of 50px outside the border*/
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+}
